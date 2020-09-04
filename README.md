@@ -1,6 +1,6 @@
 **About**
 
-This project is API that was created for [Shopping List App](https://github.com/binczech/shopping-list-app). It is written in [Express.js](https://expressjs.com/). It reads data from JSON files and exposes data through 3 endpoints.
+This project is API that was created for [Shopping App](https://github.com/binczech/shopping-app). It is written in [Express.js](https://expressjs.com/). It reads data from JSON files and exposes data through 3 endpoints.
 
 **Prerequisities**
 

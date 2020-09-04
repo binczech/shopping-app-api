@@ -1,10 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 
 const discouts = require('./data/discouts.json')
 const hp = require('./data/hp.json')
 const leaflet = require('./data/leaflet.json')
 
 const app = express()
+app.use(cors())
 port = 3001
 if (process.env.API_PORT) {
     port = process.env.API_PORT
@@ -22,7 +24,7 @@ app.get('/hp', (req, res) => {
     res.json(hp)
 })
 
-app.get('/leaflet', (req, res) => {
+app.get('/leaflet/:leafletName', (req, res) => {
     res.json(leaflet)
 })
 
